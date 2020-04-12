@@ -17,26 +17,33 @@ h1 {
   opacity: 30%;
   top: 0px;
   left: 0px;
+  z-index: -5;
 }
 #border-black {
   text-align: center;
   border: black solid;
 
 }
-ul {
-  list-style-type: none;
-  font-size: 20px;
-}
-ul a {
-  display: inline-block;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+.accordion {
   background-color: gray;
-  float: left;
-  width: 100px;
-  
+  color: orange;
+  cursor: pointer;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  outline: none;
 }
-ul :hover {
-  background-color: green;
+.accordion:hover {
+  background-color: black;
+}
+.panel {
+  padding: 0 20px;
+  background-color: rosybrown;
+  display: none;
+  overflow: hidden;
+  z-index: 1;
+}
+#column {
+  column-count: 3;
+  column-rule: 5px solid gray;
 }
