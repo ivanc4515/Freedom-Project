@@ -8,13 +8,36 @@
   </head>
   <body id="back-img">
     <script src="script.js"></script>
+    
     <h1 > 3D Printing </h1>
     <div id="img1"> <img src="https://www.3dnatives.com/en/wp-content/uploads/sites/2/cover3.jpg" width="1060px"></div>
     <br>
     <br> 
-    <button class="accordion"> Home </button>
+    <button class="accordion"> About </button>
     <div class="panel">
-      <p id="column"> isvfivahbdviwsbwefbciwbieuvbvksbiuefks dkhfgisb vfsjheuifhskbeyfgfbvnzsbeuifs dke iwbkjviu n ab ekjanfgoaub qoa habsf h iwbfou </p>
+      <p id="column"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget tellus nulla. Nam et massa feugiat, vulputate enim quis, fringilla nisl. In nulla sapien, faucibus in nisi at, luctus aliquet nibh. Sed ultrices, magna eget convallis eleifend, tortor ligula rutrum nisl, sit amet convallis felis sapien a augue. Aliquam euismod nulla eu arcu lacinia mollis. Integer ut pellentesque nisl, ac lacinia sapien. Proin tempus sapien vel tincidunt efficitur. </p>
     </div>
+    <button class="accordion"> Uses </button>
+    <div class="panel">
+      <p id="column"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget tellus nulla. Nam et massa feugiat, vulputate enim quis, fringilla nisl. In nulla sapien, faucibus in nisi at, luctus aliquet nibh. Sed ultrices, magna eget convallis eleifend, tortor ligula rutrum nisl, sit amet convallis felis sapien a augue. Aliquam euismod nulla eu arcu lacinia mollis. Integer ut pellentesque nisl, ac lacinia sapien. Proin tempus sapien vel tincidunt efficitur. </p>
+    </div>
+    <button class="accordion"> IDK </button>
+    <div class="panel">
+      <p id="column"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget tellus nulla. Nam et massa feugiat, vulputate enim quis, fringilla nisl. In nulla sapien, faucibus in nisi at, luctus aliquet nibh. Sed ultrices, magna eget convallis eleifend, tortor ligula rutrum nisl, sit amet convallis felis sapien a augue. Aliquam euismod nulla eu arcu lacinia mollis. Integer ut pellentesque nisl, ac lacinia sapien. Proin tempus sapien vel tincidunt efficitur. </p>
+    </div>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+</script>
   </body>
 </html>
